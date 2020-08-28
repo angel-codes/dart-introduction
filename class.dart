@@ -9,14 +9,14 @@ class Weapon {
   double ammunition;
   
   // Constructor
-  Weapon({String name = 'Classified', String type, double ammunition}){
-    this.name = name;
-    this.type = type;
-    this.ammunition = ammunition;
-  }
+//   Weapon({String name = 'Classified', String type, double ammunition}){
+//     this.name = name;
+//     this.type = type;
+//     this.ammunition = ammunition;
+//   }
   
-  String toString(){
-    return 'Name: ${this.name} - Type: ${this.type} - Ammunition Type: ${this.ammunition}';     
-  }
+  Weapon({this.name = 'Classified', this.type, this.ammunition});
+  
+  String toString() => 'Name: $name - Type: $type - Ammunition Type: $ammunition';     
   
 }
